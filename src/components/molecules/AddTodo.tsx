@@ -35,17 +35,17 @@ class Component extends React.Component<Props, State> {
 
     render() {
         return (
-      <div>
-        <form onSubmit={(e) => { this.handleSubmit(e); }}>
-          <input
-            onChange={(e) => { this.handleChange(e); }}
-            value={this.state.value}
-          />
-          <button type={'submit'}>
-            Add Todo
+        <div>
+            <form onSubmit={(e) => { this.handleSubmit(e); }}>
+            <input
+                onChange={(e) => { this.handleChange(e); }}
+                value={this.state.value}
+            />
+            <button type={'submit'}>
+                Add Todo
                     </button>
-        </form>
-      </div>
+            </form>
+        </div>
         );
     }
 }

@@ -12,10 +12,7 @@ type ShowActive = {
     type: 'SHOW_ACTIVE',
 };
 
-export type FilterType
-  = ShowAll
-  | ShowCompleted
-  | ShowActive;
+export type FilterType = ShowAll | ShowCompleted | ShowActive;
 
 export const showAll = (): FilterType => {
     return {
@@ -45,9 +42,9 @@ export interface SetVisibilityFilterAction extends Action {
 }
 
 export const setVisibilityFilter
-  = (payload: SetVisibilityFilterPayload): SetVisibilityFilterAction => {
-      return {
-          payload,
-          type: 'SET_VISIBILITY_FILTER',
-      };
-  };
+= (payload: SetVisibilityFilterPayload): SetVisibilityFilterAction => {
+    return {
+        payload,
+        type: 'SET_VISIBILITY_FILTER',
+    };
+};

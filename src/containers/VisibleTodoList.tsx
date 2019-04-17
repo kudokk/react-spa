@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { Action, Dispatch } from 'redux';
 import { actionCreator, RootState } from '../modules';
-import TodoList from '../components/TodoList';
+import TodoList from '../components/molecules/TodoList';
 
 const mapStateToProps = (state: RootState) => {
     const filter = () => {
@@ -30,6 +30,6 @@ const mapDispatchToProps = (dispatch: Dispatch<Action>) => {
 };
 
 export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
+    mapStateToProps,
+    mapDispatchToProps,
 )(TodoList);

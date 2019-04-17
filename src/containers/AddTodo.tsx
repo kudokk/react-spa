@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import { Action, Dispatch } from 'redux';
 
 import { actionCreator } from '../modules';
-import AddTodo from '../components/AddTodo';
+import AddTodo from '../components/molecules/AddTodo';
 
 const mapStateToProps = () => {
     return {};
@@ -17,6 +17,6 @@ const mapDispatchToProps = (dispatch: Dispatch<Action>) => {
 };
 
 export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
+    mapStateToProps,
+    mapDispatchToProps,
 )(AddTodo);

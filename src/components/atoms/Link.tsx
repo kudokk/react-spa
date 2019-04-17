@@ -9,14 +9,14 @@ type Props = {
 const component: React.SFC<Props> = (props: Props) => {
     return (
     <button
-      onClick={props.onClick}
-      disabled={props.active}
-      style={{
-          marginLeft: '4px',
-      }}
-    >
-      {props.children}
-    </button>
+        onClick={props.onClick}
+        disabled={props.active}
+        style={{
+            marginLeft: '4px',
+        }}
+        >
+        {props.children}
+        </button>
     );
 };
 

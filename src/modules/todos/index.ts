@@ -1,9 +1,7 @@
 import { addTodo, AddTodoAction } from './AddTodo';
 import { toggleTodo, ToggleTodoAction } from './ToggleTodo';
 
-type Actions
-  = AddTodoAction
-  | ToggleTodoAction;
+type Actions = AddTodoAction | ToggleTodoAction;
 
 export type State = {    // ページ全体で保持しとくべき情報はTodoの配列くらい
     todos: {

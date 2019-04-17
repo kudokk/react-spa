@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import { Action, Dispatch } from 'redux';
 
 import { actionCreator, RootState } from '../modules';
-import Link from '../components/Link';
+import Link from '../components/atoms/Link';
 import { FilterType } from '../modules/visibilityFilter';
 
 type OwnProps = {
@@ -19,14 +19,14 @@ const mapDispatchToProps = (dispatch: Dispatch<Action>, ownProps: OwnProps) => {
     return {
         onClick: () => {
             dispatch(
-              actionCreator.visibilityFilter.setVisibilityFilter({ filter: ownProps.filter },
-              ),
+                actionCreator.visibilityFilter.setVisibilityFilter({ filter: ownProps.filter },
+                ),
             );
         },
     };
 };
 
 export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
+    mapStateToProps,
+    mapDispatchToProps,
 )(Link);

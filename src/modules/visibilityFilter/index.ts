@@ -1,11 +1,10 @@
 import {
-  FilterType, showAll,
-  setVisibilityFilter, SetVisibilityFilterAction,
+    FilterType, showAll,
+    setVisibilityFilter, SetVisibilityFilterAction,
 } from './SetVisibilityFilter';
 export { FilterType, showAll, showCompleted, showActive } from './SetVisibilityFilter';
 
-type Actions
-  = SetVisibilityFilterAction;
+type Actions = SetVisibilityFilterAction;
 
 export type State = {
     visibility: FilterType,

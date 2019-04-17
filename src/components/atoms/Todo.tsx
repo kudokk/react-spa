@@ -9,13 +9,13 @@ type Props = {
 const component: React.SFC<Props> = (props: Props) => {
     return (
     <li
-      onClick={props.onClick}
-      style={{
-          textDecoration: props.completed ? 'line-through' : 'none',
-      }}
-    >
-      {props.text}
-    </li>
+        onClick={props.onClick}
+        style={{
+            textDecoration: props.completed ? 'line-through' : 'none',
+        }}
+        >
+        {props.text}
+        </li>
     );
 };
 
